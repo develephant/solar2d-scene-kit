@@ -6,8 +6,9 @@ local sceneClass = require("scenes.classes.Start")
 
 --#############################################################################
 --#############################################################################
---# !! Don't change anything below !!
+--# /!\ Don't change anything below /!\
 --#############################################################################
+
 local composer = require("composer")
 local scene = composer.newScene()
 

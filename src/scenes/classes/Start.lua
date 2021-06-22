@@ -6,6 +6,15 @@ local Scene = {
   id = "Start" --Assign a Scene Class name here.
 }
 
+--#############################################################################
+--# Require any modules you need for this scene class here:
+--#############################################################################
+-- local db = require("libs/db.lua")
+
+--#############################################################################
+--# All event methods are optional.
+--#############################################################################
+
 function Scene.onCreate( view )
   print("did create it")
 end
