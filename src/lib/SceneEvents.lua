@@ -2,13 +2,13 @@
 
 local composer = require("composer")
 
-local dispatcher = composer.getVariable("dispatcher")
+local events = composer.getVariable("events")
 
 --Global event listener
 local function onEvent( evt )
   print("On " .. evt.type .. " Event")
 end
 
-dispatcher:addEventListener("OnEvent", onEvent)
+events:addEventListener("OnEvent", onEvent)
 
-return dispatcher
+return events

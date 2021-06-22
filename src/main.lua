@@ -4,12 +4,14 @@
 io.output():setvbuf("no")
 display.setStatusBar(display.HiddenStatusBar)
 
-local composer = require( "composer" )
+--#############################################################################
+--# events
+--#############################################################################
+local events = system.newEventDispatcher()
 
--- Main Event Dispatcher
-local dispatcher = system.newEventDispatcher()
-composer.setVariable("dispatcher", dispatcher)
-
---
-
-composer:gotoScene("scenes.default_scene")
+--#############################################################################
+--# composer
+--#############################################################################
+local composer = require("composer")
+composer.setVariable("events", events)
+composer:gotoScene("scenes_tpl.start_scene")
